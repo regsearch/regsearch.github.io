@@ -3,34 +3,59 @@
 	<head>
 		<title>regsearch</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<header>
-			<ul class="align-left horizontal-ul">
-				<li>About</li>
-				<li>Store</li>
-			</ul>
-			<ul class="align-right  horizontal-ul">
-				<li>Gmail</li>
-				<li>Images</li>
-				<li>X</li>
-				<li>O</li>
-			</ul>
+			<p>Have any suggestions for more search modifiers? Please <a href="https://github.com/regsearch/regsearch.github.io">open an issue on GitHub</a> and let me know.</p>
 		</header>
 		<main>
-			<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+			<img src="research_logo500.png">
+			
+			<br>
+			<br>
+			
 			<form>
-				<input type="text">
+				<input type="text" id="search_textbox" placeholder="Enter query and select a modifier below" style="width: 300px; padding: 11px;" autofocus>
+				<a class="button grey" id="standard_google_button" href="#">Google Search</a>
 				
 				<br>
 				
-				<button>Google Search</button>
-				<button>I'm Feeling Lucky</button>
+				<br>
+				<br>
+				<h5>Standard:</h5>
+				<br>
+				
+				<a class="button col3" data-baseurl="https://www.google.com/search?tbm=vid" href="#">Videos</a>
+				<a class="button col4" data-baseurl="https://scholar.google.com/scholar?" href="#">Google Scholar</a>
+				
+				<br>
+				<br>
+				<h5>Special Modifiers:</h5>
+				<br>
+				
+				<a class="button col1" data-append="scientific studies" href="#">Scientific Studies</a>
+				<a class="button col2" data-append='inurl:forum|viewthread|showthread|viewtopic|showtopic|"index.php?topic" | intext:"reading this topic"|"next thread"|"next topic"|"send private message"' href="#">Forum Discussions</a>
+				<!--
+				<a class="button col3" data-append="" href="#">Scientific Articles</a>
+				<a class="button col4" data-append="" href="#">Non Regurgitated</a>
+				-->
+				
+				<br>
+				<br>
+				<h5>Popular general message boards:</h5>
+				<br>
+				
+				<a class="button col1" data-append="site:reddit.com" href="#">Reddit</a>
+				<a class="button col2" data-append="site:4chan.org" href="#">4chan</a>
+				<a class="button col3" data-append="site:8ch.net" href="#">8ch</a>
+				<a class="button col4" data-append="site:quora.com" href="#">Quora</a>
+				<a class="button col5" data-append="site:ycombinator.com" href="#">Ycombinator</a>
+				<a class="button col6" data-append="site:stackexchange.com" href="#">Stackexchange</a>
+				
+				<input type="submit" value="Submit" style="display-none">
 			</form>
 			
-			<br>
-			
-			<p>Students across the country Doodle for Google: <a href="#">Cast your vote for the finalists</a></p>
 		</main>
 		<footer>
 			<ul class="align-left  horizontal-ul">
@@ -44,5 +69,7 @@
 				<li>Settings</li>
 			</ul>
 		</footer>
+		
+		<script src="index.js"></script>
 	</body>
 </html>

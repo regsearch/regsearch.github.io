@@ -8,12 +8,13 @@ html, body {
 }
 
 header {
-	padding: 10px 30px;
+	padding: 0px;
+	text-align: center;
 }
 
 main {
 	text-align: center;
-	padding-top: 135px;
+	padding-top: 65px;
 }
 
 footer {
@@ -25,6 +26,10 @@ footer {
 	border-top: 1px solid #E4E4E4;
 	background-color: #F2F2F2;
 	color: #5F6368;
+}
+
+.display-none {
+	display: none;
 }
 
 .align-left { float: left; }
@@ -41,4 +46,23 @@ footer {
 
 .horizontal-ul li:last-child {
 	padding-right: 0px;
+}
+
+.button {
+	display: inline-block;
+	padding: 12px;
+	text-decoration: none;
+}
+
+.col1 { background-color: #8DC44F; color: #000; }
+.col2 { background-color: #1CA45C; color: #000; }
+.col3 { background-color: #FFC718; color: #000; }
+.col4 { background-color: #FF9E0F; color: #000; }
+.col5 { background-color: #DA483B; color: #000; }
+.col6 { background-color: #4486F4; color: #000; }
+
+.grey { background: linear-gradient(to bottom, #f4f4f4, #f1f1f1 60%); color: #444; }
+
+h5 {
+	margin: 0;
 }
