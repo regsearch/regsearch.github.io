@@ -1,7 +1,11 @@
 let default_baseurl = "https://www.google.com/search?";
 
+function replace_spaces(text) {
+	return text.split(' ').join('+');
+}
+
 function compose_query(text) {
-	return "q="+text.split(' ').join('+');
+	return "q="+replace_spaces(text);
 }
 
 function compose_search(baseurl, query) {
@@ -21,7 +25,7 @@ function updateLinks() {
 		let baseurl = $(this).attr("data-baseurl") || default_baseurl;
 		
 		let append = $(this).attr("data-append") || "";
-		append = append?" "+append:"";
+		append = append? replace_spaces(" "+append) :"";
 		
 		let search_text = $("#search_textbox").val() || "";
 		
