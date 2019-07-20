@@ -27,6 +27,13 @@
 	videos i often run into guided meditation/music. perhaps could be easily
 	sorted out via some category and keyword filters.
 	  ......just tried, it's harder than expected, maybe heuristic (science|x|x..)
+	  
+	
+	2 or 3 main categories here really...
+	-scientific: papers pubmed scholar etc
+	-opinions/discussions: forum search, message boards
+	
+	-videos maybe if not included in opinions: youtube etc. hard to search here
 	-->
 	
 	<head>
@@ -52,19 +59,13 @@
 				
 				<br>
 				<br>
-				<h5>Standard:</h5>
+				<h5>Science/Fact Based Search:</h5>
 				<br>
 				
-				<a class="button col3" data-baseurl="https://www.google.com/search?tbm=vid" href="#">Videos</a>
-				<a class="button col4" data-baseurl="https://scholar.google.com/scholar?" href="#">Google Scholar</a>
+				<a class="button col1" data-append="scientific studies" href="#">Scientific Studies</a>
+				<a class="button col2" data-baseurl="https://scholar.google.com/scholar?" href="#">Google Scholar</a>
+				<a class="button col3" data-append="site:wikipedia.org" href="#">Wikipedia</a>
 				
-				<br>
-				<br>
-				<h5>Special Modifiers:</h5>
-				<br>
-				
-				<a class="button col1" data-append='inurl:forum|viewthread|showthread|viewtopic|showtopic|"index.php?topic" | intext:"reading this topic"|"next thread"|"next topic"|"send private message"' href="#">Forum Discussions</a>
-				<a class="button col2" data-append="scientific studies" href="#">Scientific Studies</a>
 				<!--
 				<a class="button col3" data-append="" href="#">Scientific Articles</a>
 				<a class="button col4" data-append="" href="#">Non Regurgitated</a>
@@ -72,7 +73,12 @@
 				
 				<br>
 				<br>
-				<h5>Popular general message boards:</h5>
+				<h5>Opinion Based Search:</h5>
+				<br>
+				
+				<a class="button col6" data-append='inurl:forum|viewthread|showthread|viewtopic|showtopic|"index.php?topic" | intext:"reading this topic"|"next thread"|"next topic"|"send private message"' href="#">Forum Discussions</a>
+				
+				<br>
 				<br>
 				
 				<a class="button col1" data-append="site:reddit.com" href="#">Reddit</a>
@@ -81,6 +87,12 @@
 				<a class="button col4" data-append="site:quora.com" href="#">Quora</a>
 				<a class="button col5" data-append="site:ycombinator.com" href="#">YCombinator</a>
 				<a class="button col6" data-append="site:stackexchange.com" href="#">StackExchange</a>
+				
+				<br>
+				<br>
+				
+				<a class="button col1" data-baseurl="https://www.youtube.com/results?" href="#">YouTube</a>
+				<a class="button col2" data-baseurl="https://www.google.com/search?tbm=vid" data-append="site:vimeo.com" href="#">Vimeo</a>
 				
 				<input type="submit" value="Submit" class="display-none">
 			</form>
