@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	padding: 10px 30px;
+}
+
+main {
+	text-align: center;
+	padding-top: 135px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 30px;
+	border-top: 1px solid #E4E4E4;
+	background-color: #F2F2F2;
+	color: #5F6368;
+}
+
+.align-left { float: left; }
+.align-right { float: right; }
+
+.horizontal-ul {
+	list-style-type: none;
+	margin: 0;
+}
+.horizontal-ul li {
+	display: inline-block;
+	padding-right: 10px;
+}
+
+.horizontal-ul li:last-child {
+	padding-right: 0px;
+}
